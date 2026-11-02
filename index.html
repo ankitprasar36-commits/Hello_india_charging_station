@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082f2b">
+  <meta name="description" content="Helio Charge — solar-powered EV charging, made simple. Find stations, explore clean energy and reserve a charging slot.">
+  <title>Helio Charge | Power Your Journey with the Sun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Helio Charge home"><span class="brand-mark">☀</span><span>helio<span class="brand-light">charge</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#stations">Find a station</a><a href="#how">How it works</a><a href="#impact">Our impact</a><a href="#pricing">Pricing</a>
+      <a class="btn btn-small btn-dark" href="#booking">Book a charge <span>↗</span></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="pulse"></span> CLEAN ENERGY. CLEAR ROAD AHEAD.</div>
+      <h1>Good for the planet.<br><span>Great for the drive.</span></h1>
+      <p class="hero-lede">Charge your electric vehicle with the power of the sun. Find a nearby station, reserve your slot, and move forward with cleaner energy.</p>
+      <div class="hero-actions"><a class="btn btn-lime" href="#stations">Find a charging station <span>→</span></a><a class="text-link" href="#how"><span class="play">▶</span> See how it works</a></div>
+      <div class="hero-proof"><div class="avatar-stack"><span>EV</span><span>☀</span><span>↗</span></div><div><strong>Drive a little greener</strong><small>One charge at a time</small></div><div class="proof-divider"></div><div><strong>Solar-first</strong><small>Renewable by design</small></div></div>
+    </div>
+    <div class="hero-visual">
+      <div class="sun-disc"></div>
+      <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1100&q=85" alt="Electric car plugged into a charging station" onerror="this.style.display='none'"></div>
+      <div class="floating-card availability"><span class="status-dot"></span><div><small>Station status</small><strong>Ready when you are</strong></div><span class="arrow-circle">↗</span></div>
+      <div class="floating-card solar-card"><div class="solar-icon">☀</div><div><small>Today's solar energy</small><strong>1,284 <em>kWh</em></strong><span class="mini-up">↗ Clean energy generated</span></div></div>
+      <div class="hero-tag">POWERED BY SUNLIGHT <span>✳</span></div>
+    </div>
+  </div>
+  <div class="hero-bottom container"><span>SMART CHARGING FOR A BRIGHTER TOMORROW</span><div class="hero-bottom-line"></div><span>01 / 04</span></div>
+</section>
+
+<section class="stats-strip">
+  <div class="container stats-grid">
+    <div><span class="stat-icon">☀</span><div><strong>100%</strong><small>Renewable-ready vision</small></div></div>
+    <div><span class="stat-icon">⌁</span><div><strong>Fast & simple</strong><small>Easy charging discovery</small></div></div>
+    <div><span class="stat-icon">◉</span><div><strong>Driver first</strong><small>Built around your journey</small></div></div>
+    <div><span class="stat-icon">↗</span><div><strong>Lower impact</strong><small>Smarter energy choices</small></div></div>
+  </div>
+</section>
+
+<section class="section container" id="stations">
+  <div class="section-heading">
+    <div><div class="eyebrow dark-eyebrow">YOUR NEXT CHARGE IS CLOSER</div><h2>Find your <span>power spot.</span></h2></div>
+    <p>Discover sample charging locations and choose the connector that fits your journey.</p>
+  </div>
+  <div class="station-search">
+    <label class="search-field"><span>⌕</span><input id="stationSearch" type="search" placeholder="Search by city or station name" aria-label="Search by city or station name"></label>
+    <label class="filter-field"><span>Charger type</span><select id="chargerFilter" aria-label="Filter by charger type"><option value="all">All connectors</option><option value="CCS2">CCS2</option><option value="Type 2">Type 2</option><option value="CHAdeMO">CHAdeMO</option></select></label>
+    <button class="btn btn-dark search-btn" id="searchBtn">Search stations <span>→</span></button>
+  </div>
+  <div class="station-results-top"><span id="resultCount">3 sample stations</span><span class="live-note"><span class="status-dot"></span> Demo availability</span></div>
+  <div class="station-grid" id="stationGrid">
+    <article class="station-card" data-name="sunrise hub ludhiana" data-type="CCS2">
+      <div class="station-photo photo-one"><span class="station-label">SOLAR + GRID</span><span class="available-pill"><i></i> Available</span></div>
+      <div class="station-info"><div class="station-title-row"><div><h3>Sunrise Energy Hub</h3><p>Model Town, Ludhiana</p></div><span class="distance">2.4 km</span></div><div class="station-meta"><span>⚡ CCS2 · 60 kW</span><span>◷ 24/7</span></div><div class="station-footer"><div><small>Starting from</small><strong>₹12 <em>/ kWh</em></strong></div><button class="book-card" data-station="Sunrise Energy Hub">Book slot <span>↗</span></button></div></div>
+    </article>
+    <article class="station-card" data-name="greenway charge plaza chandigarh" data-type="Type 2">
+      <div class="station-photo photo-two"><span class="station-label">SOLAR CANOPY</span><span class="available-pill"><i></i> Available</span></div>
+      <div class="station-info"><div class="station-title-row"><div><h3>Greenway Charge Plaza</h3><p>Sector 35, Chandigarh</p></div><span class="distance">— km</span></div><div class="station-meta"><span>⚡ Type 2 · 22 kW</span><span>◷ 06:00–23:00</span></div><div class="station-footer"><div><small>Starting from</small><strong>₹10 <em>/ kWh</em></strong></div><button class="book-card" data-station="Greenway Charge Plaza">Book slot <span>↗</span></button></div></div>
+    </article>
+    <article class="station-card" data-name="suntrail fast charge jalandhar" data-type="CHAdeMO">
+      <div class="station-photo photo-three"><span class="station-label">FAST CHARGING</span><span class="available-pill"><i></i> Available</span></div>
+      <div class="station-info"><div class="station-title-row"><div><h3>Suntrail Fast Charge</h3><p>GT Road, Jalandhar</p></div><span class="distance">— km</span></div><div class="station-meta"><span>⚡ CHAdeMO · 50 kW</span><span>◷ 24/7</span></div><div class="station-footer"><div><small>Starting from</small><strong>₹14 <em>/ kWh</em></strong></div><button class="book-card" data-station="Suntrail Fast Charge">Book slot <span>↗</span></button></div></div>
+    </article>
+  </div>
+  <p class="demo-disclaimer">Demo content: station locations, distances, availability and prices are illustrative and are not live network data.</p>
+</section>
+
+<section class="how-section" id="how">
+  <div class="container">
+    <div class="section-heading light-heading"><div><div class="eyebrow">NO FUSS. MORE FREEDOM.</div><h2>Three steps to a <span>better charge.</span></h2></div><p>From search to switch-on, keep your charging journey simple.</p></div>
+    <div class="steps-grid">
+      <article class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Find your station</h3><p>Search nearby locations and compare connector types and charging speeds.</p><span class="step-line"></span></article>
+      <article class="step-card"><span class="step-number">02</span><div class="step-icon">▦</div><h3>Reserve your slot</h3><p>Choose a station, date and time that work with your plans.</p><span class="step-line"></span></article>
+      <article class="step-card"><span class="step-number">03</span><div class="step-icon">ϟ</div><h3>Plug in & go</h3><p>Connect your vehicle and get back to what moves you forward.</p><span class="step-line"></span></article>
+    </div>
+  </div>
+</section>
+
+<section class="impact-section" id="impact">
+  <div class="container impact-grid">
+    <div class="impact-art"><div class="impact-image"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=85" alt="Solar panels under a bright sky" onerror="this.style.display='none'"></div><div class="impact-sticker"><span>☀</span><strong>Cleaner miles<br>start here.</strong></div><div class="impact-caption">ENERGY WITH A BRIGHTER PURPOSE</div></div>
+    <div class="impact-copy"><div class="eyebrow dark-eyebrow">THE BIGGER PICTURE</div><h2>Every journey can move us <span>forward.</span></h2><p>Electric mobility is one part of a cleaner future. Helio Charge is designed to make solar-powered charging easier to discover, understand and use.</p><div class="impact-metrics"><div><strong>01</strong><div><b>Sun-powered thinking</b><small>Make renewable energy part of the journey.</small></div></div><div><strong>02</strong><div><b>Better visibility</b><small>Understand your options before you plug in.</small></div></div><div><strong>03</strong><div><b>Simple by design</b><small>Less friction between you and your next trip.</small></div></div></div><a class="text-link dark-link" href="#booking">Plan your next charge <span>→</span></a></div>
+  </div>
+</section>
+
+<section class="dashboard-section">
+  <div class="container">
+    <div class="section-heading"><div><div class="eyebrow dark-eyebrow">A SNAPSHOT OF CLEANER ENERGY</div><h2>Energy at a <span>glance.</span></h2></div><p>Explore a sample dashboard view. Metrics below are illustrative and are not connected to live chargers.</p></div>
+    <div class="dashboard">
+      <div class="dashboard-head"><div><span class="dashboard-dot"></span><strong>Helio network overview</strong><small>DEMO DASHBOARD</small></div><span class="period-select">Today ▾</span></div>
+      <div class="metric-grid"><div class="metric-card"><span>Solar energy generated</span><strong>1,284 <em>kWh</em></strong><small class="positive">↗ Sample daily total</small><div class="sparkline"><i style="height:35%"></i><i style="height:48%"></i><i style="height:40%"></i><i style="height:66%"></i><i style="height:54%"></i><i style="height:82%"></i><i style="height:70%"></i><i style="height:100%"></i></div></div><div class="metric-card"><span>Charging sessions</span><strong>86</strong><small>Across sample stations</small><div class="progress-track"><i style="width:72%"></i></div><small>72% of demo daily target</small></div><div class="metric-card"><span>Chargers available</span><strong>12 <em>/ 18</em></strong><small>Example network status</small><div class="charger-dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i><i class="off"></i></div></div><div class="metric-card energy-card"><span>Energy mix · illustration</span><div class="donut"><div><strong>68%</strong><small>Solar share</small></div></div><div class="legend"><span><i></i> Solar</span><span><i></i> Other supply</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-heading"><div><div class="eyebrow dark-eyebrow">STRAIGHTFORWARD PRICING</div><h2>Pick the pace. <span>Know the price.</span></h2></div><p>Illustrative sample rates to show how pricing can be presented. Actual operator tariffs may differ.</p></div>
+    <div class="pricing-grid">
+      <article class="price-card"><span class="plan-label">EVERYDAY</span><h3>Standard</h3><p>For everyday top-ups and longer stops.</p><div class="price"><strong>₹10</strong><span>/ kWh from</span></div><ul><li>✓ Standard AC charging</li><li>✓ Station discovery</li><li>✓ Clear session estimate</li></ul><a href="#booking" class="btn btn-outline">Choose Standard <span>→</span></a></article>
+      <article class="price-card featured-price"><span class="popular-label">QUICK TOP-UP</span><span class="plan-label">ON THE MOVE</span><h3>Fast Charge</h3><p>When your journey needs a quicker boost.</p><div class="price"><strong>₹14</strong><span>/ kWh from</span></div><ul><li>✓ Selected DC fast chargers</li><li>✓ Slot reservation demo</li><li>✓ Upfront price estimate</li></ul><a href="#booking" class="btn btn-lime">Choose Fast Charge <span>→</span></a></article>
+      <article class="price-card"><span class="plan-label">FREQUENT DRIVER</span><h3>Membership</h3><p>For drivers who charge with us often.</p><div class="price"><strong>Custom</strong></div><ul><li>✓ Potential member benefits</li><li>✓ Usage reporting concept</li><li>✓ Contact for partnership</li></ul><a href="#contact" class="btn btn-outline">Talk to us <span>→</span></a></article>
+    </div>
+  </div>
+</section>
+
+<section class="booking-section" id="booking">
+  <div class="container booking-grid">
+    <div><div class="eyebrow">MAKE ROOM FOR THE ROAD</div><h2>Your next charge.<br><span>On your schedule.</span></h2><p>Try the booking demo to see the intended reservation flow. No payment is taken and no real charger is reserved.</p><div class="booking-assurance"><span>✓</span> Simple booking flow <span>✓</span> No payment in this demo</div></div>
+    <form class="booking-form" id="bookingForm">
+      <div class="form-head"><div><small>HELIO CHARGE</small><h3>Reserve a charging slot</h3></div><span class="form-icon">▦</span></div>
+      <label>Choose a station<select id="bookingStation" required><option value="Sunrise Energy Hub">Sunrise Energy Hub — Ludhiana</option><option value="Greenway Charge Plaza">Greenway Charge Plaza — Chandigarh</option><option value="Suntrail Fast Charge">Suntrail Fast Charge — Jalandhar</option></select></label>
+      <div class="form-two"><label>Date<input id="bookingDate" type="date" required></label><label>Start time<select id="bookingTime" required><option>09:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>02:00 PM</option><option>04:00 PM</option><option>06:00 PM</option></select></label></div>
+      <div class="form-two"><label>Vehicle type<select required><option>Electric car</option><option>Electric SUV</option><option>Electric two-wheeler</option><option>Other EV</option></select></label><label>Estimated energy<select id="energySelect"><option value="10">Up to 10 kWh</option><option value="20">Up to 20 kWh</option><option value="40">Up to 40 kWh</option></select></label></div>
+      <div class="estimate-row"><span>Estimated cost <small>(illustrative)</small></span><strong id="costEstimate">₹120</strong></div>
+      <button class="btn btn-lime submit-booking" type="submit">Request demo booking <span>→</span></button>
+      <p class="form-note">Demo only. This form does not create a real reservation.</p>
+      <div class="form-success" id="bookingSuccess" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<section class="contact-section container" id="contact">
+  <div><div class="eyebrow dark-eyebrow">LET'S BUILD A BRIGHTER ROUTE</div><h2>Have a question? <span>Let's talk.</span></h2><p>Interested in a charging partnership or have feedback about this demo?</p></div>
+  <form id="contactForm" class="contact-form"><label class="sr-only" for="contactEmail">Your email</label><input id="contactEmail" type="email" placeholder="Enter your email address" required><button class="btn btn-dark" type="submit">Send interest <span>→</span></button><small id="contactMessage" aria-live="polite">Demo form only — no message is sent to a server.</small></form>
+</section>
+</main>
+
+<footer class="footer"><div class="container footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark">☀</span><span>helio<span class="brand-light">charge</span></span></a><p>Good for the planet. Great for the drive.</p><div class="footer-links"><a href="#stations">Stations</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a><a href="#home">Back to top ↑</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Helio Charge · Website concept</span><span>Built for a brighter journey <b>☀</b></span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
