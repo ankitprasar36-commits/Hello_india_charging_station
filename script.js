@@ -83,3 +83,32 @@ $("contactForm").addEventListener("submit", event => {
   $("contactMessage").textContent = "Thanks! This is a front-end demo; connect a form service to receive messages.";
   $("contactMessage").style.color = "#5f8c2b";
 });
+// HELLO INDIA DARK MODE
+const themeToggle = document.getElementById("themeToggle");
+
+if (themeToggle) {
+  const savedTheme = localStorage.getItem("helloTheme");
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+  }
+
+  function updateThemeButton() {
+    themeToggle.textContent = document.body.classList.contains("dark")
+      ? "☀️ Light Mode"
+      : "🌙 Dark Mode";
+  }
+
+  updateThemeButton();
+
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    const theme = document.body.classList.contains("dark")
+      ? "dark"
+      : "light";
+
+    localStorage.setItem("helloTheme", theme);
+    updateThemeButton();
+  });
+}
