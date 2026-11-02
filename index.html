@@ -136,7 +136,49 @@
     </form>
   </div>
 </section>
+<!-- SOLAR ENERGY DASHBOARD -->
+<section class="energy-dashboard container" id="dashboard">
 
+  <div class="section-heading">
+    <div class="eyebrow">SMART ENERGY MONITOR</div>
+    <h2>Solar Energy Dashboard ☀️</h2>
+    <p>Monitor your clean energy performance.</p>
+  </div>
+
+  <div class="dashboard-grid">
+
+    <div class="energy-card">
+      <span>☀️ Solar Generation</span>
+      <h3>5.2 kW</h3>
+      <small>Today's demo generation</small>
+    </div>
+
+    <div class="energy-card">
+      <span>🔋 Battery Level</span>
+      <h3 id="batteryLevel">85%</h3>
+      <div class="battery-track">
+        <div id="batteryBar" class="battery-fill"></div>
+      </div>
+    </div>
+
+    <div class="energy-card">
+      <span>⚡ Energy Consumption</span>
+      <h3>3.4 kWh</h3>
+    </div>
+
+    <div class="energy-card">
+      <span>🌱 Clean Energy Saved</span>
+      <h3>2.8 kWh</h3>
+    </div>
+
+  </div>
+
+  <p class="demo-disclaimer">
+    Demo values only, not live sensor readings.
+  </p>
+
+</section>
+<!-- END SOLAR DASHBOARD -->
 <section class="contact-section container" id="contact">
   <div><div class="eyebrow dark-eyebrow">LET'S BUILD A BRIGHTER ROUTE</div><h2>Have a question? <span>Let's talk.</span></h2><p>Interested in a charging partnership or have feedback about this demo?</p></div>
   <form id="contactForm" class="contact-form"><label class="sr-only" for="contactEmail">Your email</label><input id="contactEmail" type="email" placeholder="Enter your email address" required><button class="btn btn-dark" type="submit">Send interest <span>→</span></button><small id="contactMessage" aria-live="polite">Demo form only — no message is sent to a server.</small></form>
