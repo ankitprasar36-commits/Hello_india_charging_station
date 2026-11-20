@@ -130,7 +130,17 @@
       <div class="form-two"><label>Date<input id="bookingDate" type="date" required></label><label>Start time<select id="bookingTime" required><option>09:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>02:00 PM</option><option>04:00 PM</option><option>06:00 PM</option></select></label></div>
       <div class="form-two"><label>Vehicle type<select required><option>Electric car</option><option>Electric SUV</option><option>Electric two-wheeler</option><option>Other EV</option></select></label><label>Estimated energy<select id="energySelect"><option value="10">Up to 10 kWh</option><option value="20">Up to 20 kWh</option><option value="40">Up to 40 kWh</option></select></label></div>
       <div class="estimate-row"><span>Estimated cost <small>(illustrative)</small></span><strong id="costEstimate">₹120</strong></div>
-      <button class="btn btn-lime submit-booking" type="submit">Request demo booking <span>→</span></button>
+      <button class="btn btn-lime submit-booking" type="submit">Request demo booking <span>→</span></button
+<div class="payment-option">
+  <h3>Complete Your Payment</h3>
+  <p>Pay securely for your solar charging service.</p>
+
+  <a href="YOUR_RAZORPAY_LINK"
+     target="_blank"
+     class="btn btn-lime">
+     Pay Now
+  </a>
+</div>
       <p class="form-note">Demo only. This form does not create a real reservation.</p>
       <div class="form-success" id="bookingSuccess" role="status" aria-live="polite"></div>
     </form>
